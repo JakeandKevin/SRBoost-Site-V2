@@ -28,14 +28,18 @@
 }
 #hero>img {
     max-width: 100%;
+    min-height: 36.5em;
 }
 #hero>div {
     width: 40%;
     position: absolute;
-    top: 16em;
+    top: 8em;
     right: 8em;
     line-height: 2em;
     text-align: center;
+}
+#hero>div>#logo {
+    width: 16em;
 }
 
 #section1 {
@@ -76,4 +80,7 @@
     color: white;
     text-align: center;
     margin: 0 auto;
+}
+.button:hover {
+    background-color: rgb(250, 83, 39);
 }
