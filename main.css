@@ -9,8 +9,9 @@
     z-index: 10;
     width: 100%;
     min-height: 4em;
-    background-color: rgb(98, 224, 255);
-    color: black;
+    line-height: 4em;
+    background-color: rgb(100, 210, 220);
+    color: white;
 }
 
 #container {
@@ -23,12 +24,18 @@
     height: 36em;
     background-position: center center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 #hero>img {
     max-width: 100%;
 }
-#hero>h2 {
-    
+#hero>div {
+    width: 40%;
+    position: absolute;
+    top: 16em;
+    right: 8em;
+    line-height: 2em;
+    text-align: center;
 }
 
 #section1 {
@@ -44,6 +51,8 @@
 #footer {
     width: 100%;
     height: 4em;
+    line-height: 4em;
+    text-align: center;
 }
 
 .blue {
@@ -60,6 +69,11 @@
 }
 
 .button {
+    min-width: 4em;
+    max-width: 8em;
+    line-height: 2em;
     background-color: rgb(240, 103, 59);
     color: white;
+    text-align: center;
+    margin: 0 auto;
 }
