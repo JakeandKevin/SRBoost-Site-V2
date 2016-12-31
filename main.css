@@ -33,7 +33,7 @@ a {
     font-size: 2.5vh;
     line-height: 9vh;
     margin: 0;
-    padding-left: 1em;
+    padding: .5em 0 .5em 1em;
 }
 
 #container {
