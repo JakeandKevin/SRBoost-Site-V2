@@ -89,8 +89,8 @@ a {
     border: 1px solid black;
     vertical-align: top;
 }
-.subblock {
-
+#section2>.button {
+    margin: 2em auto;
 }
 
 #footer {
