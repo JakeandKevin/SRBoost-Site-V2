@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(29, 29, 35);
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -119,7 +115,7 @@ a {
 }
 
 .gray {
-    background-color: rgb(29, 29, 35);
+    background-color: rgb(34, 34, 43);
     color: white;
 }
 
