@@ -90,8 +90,6 @@ a {
     width: 100%;
     min-height: 16em;
     text-align: center;
-    background-color: white;
-    color: rgb(34, 34, 43);
 }
 #section2>.button {
     margin: 2em auto;
@@ -106,6 +104,10 @@ a {
 #footer>h3 {
     font-size: 2vh;
 }
+.footerAlt {
+ position: absolute;
+ bottom: 3vh;
+}
 
 .blue {
     color: rgb(22, 220, 247);
@@ -118,6 +120,10 @@ a {
 .gray {
     background-color: rgb(34, 34, 43);
     color: white;
+}
+.white {
+    background-color: white;
+    color: rgb(34, 34, 43); 
 }
 
 .button {
@@ -132,4 +138,8 @@ a {
 .button:hover {
     background-color: rgb(250, 83, 39);
     box-shadow: 0px 0px 5px #222;
+}
+
+.input {
+    text-align: center;
 }

@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="priceCalc">
  <head>
-  <title>A better title</title>
+  <title>A betterER title</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="w3.css">
+  <script src="angular.min.js"></script>
  </head>
- <body>
-
+ <body ng-controller="calcCtrl" class="gray">
+  <div id="header">
+   <h1>SRBoost.com | Professional Overwatch Boosting</h1>
+  </div>
+  <div id="container" class="w3-container">
+   <div id="calc" class="gray">
+    <div class="w3-row-padding">
+     <div class="w3-half input">
+      <label for="start">Starting Skill Rating: </label><input id="start" type="number" min="1" max="5000" ng-model="start">
+     </div>
+     <div class="w3-half input">
+      <label for="end">Desired Skill Rating: </label><input id="end" type="number" min="1" max="5000" ng-model="end">
+     </div>
+    </div>
+    <div class="button">
+     <a href="" ng-click="calculateCost()">Calculate</a>
+    </div>
+    {{price | currency}}
+   </div>
+   <div id="pay" class="white">
+    
+   </div>
+  </div>
+  <div id="footer" class="footerAlt gray">
+   <h3>&copy; 2016 SRBoost.com. All Rights Reserved.</h3>
+  </div>
+  <script src="app.js"></script>
  </body>
 </html>
