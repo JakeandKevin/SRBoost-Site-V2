@@ -91,6 +91,7 @@ a {
     min-height: 16em;
     text-align: center;
     background-color: white;
+    color: rgb(34, 34, 43);
 }
 #section2>.button {
     margin: 2em auto;
