@@ -9,6 +9,15 @@ a {
     text-decoration: none;
 }
 
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -105,8 +114,8 @@ a {
     font-size: 2vh;
 }
 .footerAlt {
- position: absolute;
- bottom: 3vh;
+    position: absolute;
+    bottom: 2.5vh;
 }
 
 .blue {
@@ -123,7 +132,7 @@ a {
 }
 .white {
     background-color: white;
-    color: rgb(34, 34, 43); 
+    color: rgb(34, 34, 43);
 }
 
 .button {
@@ -142,4 +151,22 @@ a {
 
 .input {
     text-align: center;
+}
+
+.icon {
+  font-size: 3em;
+  line-height: 2.8em;
+  width: 3em;
+  height: 3em;
+  border: .15em solid black;
+  border-radius: 3em;
+  margin: 5% 0;
+}
+.icon--grey {
+  color: rgb(34, 34, 43);
+  border: .15em solid rgb(34, 34, 43);
+}
+.icon--orange {
+  color: rgb(240, 103, 59);
+  border: .15em solid rgb(240, 103, 59);
 }

@@ -20,13 +20,14 @@
       <label for="end">Desired Skill Rating: </label><input id="end" type="number" min="1" max="5000" ng-model="end">
      </div>
     </div>
+    <div ng-model="diff">{{end-start}}</div>
     <div class="button">
      <a href="" ng-click="calculateCost()">Calculate</a>
     </div>
     {{price | currency}}
    </div>
    <div id="pay" class="white">
-    
+
    </div>
   </div>
   <div id="footer" class="footerAlt gray">

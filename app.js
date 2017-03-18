@@ -12,19 +12,13 @@ var app = angular.module('priceCalc', []);
 app.controller('calcCtrl', function($scope) {
  $scope.start = 2500;
  $scope.end = 2500;
+ $scope.diff = $scope.end - $scope.start;
+ $scope.fixedDiff;
  $scope.price;
  $scope.calculateCost = function() {
   var SR = $scope.start;
-  
-  var SRGainBronze = 0;
-  var SRGainSilver = 0;
-  var SRGainGold = 0;
-  var SRGainPlatinum = 0;
-  var SRGainDiamond = 0;
-  var SRGainMaster = 0;
-  var SRGainGrandmaster = 0;
 
-  var SRGains = [SRGainBronze, SRGainSilver, SRGainGold, SRGainPlatinum, SRGainDiamond, SRGainMaster, SRGainGrandmaster];
+  var SRGains = [0, 0, 0, 0, 0, 0, 0];
 
   var totalSRGain = $scope.end - $scope.start;
 
@@ -57,21 +51,6 @@ app.controller('calcCtrl', function($scope) {
 
   for (i = 0; i < 7; i++) {
    cost += (SRGains[i] * prices[i] / 100.0);
-  }
-
-  console.log("Total Skill Rating Gain: " + totalSRGain + "SR for $" + cost.toFixed(2));
-
-  console.log("Breakdown:");
-  for (i = 0; i < 7; i++) {
-   var temp = "Skill rating gains in ";
-   if (i == 0) temp += "Bronze";
-   if (i == 1) temp += "Silver";
-   if (i == 2) temp += "Gold";
-   if (i == 3) temp += "Platinum";
-   if (i == 4) temp += "Diamond";
-   if (i == 5) temp += "Master";
-   if (i == 6) temp += "Grandmaster";
-   console.log(temp + " tier: " + SRGains[i] + "SR for $" + (SRGains[i]*prices[i]/100.0).toFixed(2));
   }
   
   $scope.price = cost;
