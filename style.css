@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif; }
+
+body {
+  background-color: #1d1d23;
+  color: white; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 9vh;
+  width: 100%;
+  background-color: #16dcf7;
+  color: white;
+  box-shadow: 0px 0px 5px #222222;
+  overflow: hidden; }
+  .header .header__title {
+    font-size: 3vh;
+    line-height: 9vh;
+    padding-left: 1em; }
+
+.container {
+  position: absolute;
+  top: 9vh; }
+  .container .hero {
+    overflow: hidden;
+    height: 91vh;
+    max-width: 100%; }
+    .container .hero .hero__img {
+      width: 100%;
+      float: left;
+      margin-right: -100%; }
+    .container .hero .motto {
+      padding-top: 15vh;
+      float: right; }
+      .container .hero .motto .motto__logo {
+        max-height: 40vh; }
+      .container .hero .motto .motto__text {
+        text-align: center; }
+      .container .hero .motto .motto__button {
+        min-width: 4em;
+        max-width: 8em;
+        line-height: 2em;
+        background-color: #f0673b;
+        color: white;
+        text-align: center;
+        margin: 0 auto; }
+        .container .hero .motto .motto__button:hover {
+          background-color: #fa5327;
+          box-shadow: 0px 0px 5px #222; }
+  .container .section1 {
+    height: 91vh;
+    max-width: 100%; }
+  .container .section2 {
+    height: 91vh;
+    max-width: 100%;
+    background-color: white;
+    color: #1d1d23; }
+
+.footer {
+  position: absolute;
+  top: 273vh;
+  height: 9vh;
+  width: 100%;
+  color: white;
+  background-color: #1d1d23;
+  color: white; }
+  .footer h3 {
+    text-align: center;
+    font-size: 2.5vh;
+    line-height: 9vh; }
+
+/*# sourceMappingURL=style.css.map */

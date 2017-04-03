@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+//Fonts
+$open-sans: 'Open Sans', sans-serif;
+
+//Colors
+$blue: rgb(22, 220, 247);
+$orange: rgb(240, 103, 59);
+$grey: rgb(29, 29, 35);
+
+//Templates
+@mixin grey {
+  background-color: $grey;
+  color: white;
+}
+@mixin white {
+  background-color: white;
+  color: $grey;
+}
+@mixin section($bottom) {
+  @if bottom == true {
+    height: 82vh;
+  } @else {
+    height: 91vh;
+  }
+  max-width: 100%;
+}
+@mixin button {
+  min-width: 4em;
+  max-width: 8em;
+  line-height: 2em;
+  background-color: $orange;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  &:hover {
+    background-color: rgb(250, 83, 39);
+    box-shadow: 0px 0px 5px #222;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $open-sans;
+}
+
+body { @include grey; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 9vh;
+  width: 100%;
+  background-color: $blue;
+  color: white;
+  box-shadow: 0px 0px 5px #222222;
+  overflow: hidden;
+  .header__title {
+    font-size: 3vh;
+    line-height: 9vh;
+    padding-left: 1em;
+  }
+}
+
+.container {
+  position: absolute;
+  top: 9vh;
+  .hero {
+    overflow: hidden;
+    @include section(false);
+    .hero__img {
+      width: 100%;
+      float: left;
+      margin-right: -100%;
+    }
+    .motto {
+      padding-top: 15vh;
+      float: right;
+      .motto__logo {
+        max-height: 40vh;
+      }
+      .motto__text {
+        text-align: center;
+      }
+      .motto__button {
+        @include button;
+      }
+    }
+  }
+  .section1 {
+    @include section(false);
+  }
+  .section2 {
+    @include section(true);
+    @include white;
+  }
+}
+
+.footer {
+  position: absolute;
+  top: 273vh;
+  height: 9vh;
+  width: 100%;
+  color: white;
+  @include grey;
+  h3 {
+    text-align: center;
+    font-size: 2.5vh;
+    line-height: 9vh;
+  }
+}
