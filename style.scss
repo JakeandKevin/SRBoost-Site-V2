@@ -26,16 +26,23 @@ $grey: rgb(29, 29, 35);
   max-width: 100%;
 }
 @mixin button {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
   min-width: 4em;
   max-width: 8em;
-  line-height: 2em;
   background-color: $orange;
-  color: white;
   text-align: center;
-  margin: 0 auto;
+  height: 2em;
+  line-height: 2em;
+  color: white;
   &:hover {
+    color: white;
     background-color: rgb(250, 83, 39);
     box-shadow: 0px 0px 5px #222;
+  }
+  &:visited {
+    color: white;
   }
 }
 
@@ -86,7 +93,7 @@ body { @include grey; }
         text-align: center;
       }
       .motto__button {
-        @include button;
+
       }
     }
   }
@@ -112,3 +119,5 @@ body { @include grey; }
     line-height: 9vh;
   }
 }
+
+.button { @include button; }
